@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 450px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px grey;
+    background-color:gainsboro;
+    border-left: rgb(153,153,153) solid 1px;
+    border-right: rgb(153,153,153) solid 1px;
+/*    border: rgb(0, 123, 255) solid 1px;*/
+
+
+}
+.header{
+    background-color: rgb(0, 123, 255);
+    height: 50px;
+}
+.header h1{
+    color: white;
+    padding: 10px;
+    
+
+}
+
+.body{
+    flex: 1;
+    color: black;
+    background-color: rgb(228, 228, 228);
+    padding: 15px 15px;
+   
+}
+.mesaj{
+    background-color: rgb(153, 153, 153);
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.mesaj_kullanici
+{
+    margin-left: auto;
+    background-color: rgb(0, 123, 255);
+    color: white;
+}
+.footer form
+{
+    display:flex;
+}
+form input{
+    flex: 1;
+    width: 368px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding-left: 5px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: rgb(109, 109, 109)solid 2px;
+}
+form button{
+    
+    float: right;
+    width: 80px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    cursor: pointer;
+    border-bottom: rgb(109, 109, 109)solid 2px;
+    border-top: rgb(109, 109, 109)solid 2px;
+    border-right: rgb(109, 109, 109)solid 2px;
+}
+form button:hover 
+{
+    background-color: rgb(26, 26, 26);
+    transition: 0.2s ease;
+}

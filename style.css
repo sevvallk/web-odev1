@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root{
+    --blue: #007bff;
+    --text-color-1:#444;
+    --text-color-1:#666;
+    --bg-color-1:#FFF;
+    --bg-color-2:#eee;
+    --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
+
+}
+
+*{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font: size 62.5%;
+    overflow: scroll;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar
+{
+    width:.8rem;
+}
+html::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+tml::-webkit-scrollbar-thumb
+{
+    background: var(--blue);
+}
+ body
+ {
+    background: var(--bg-color-2);
+ }
+ .header
+ {
+    position: fixed;
+    top:0; left:0; right:0;
+    background: var(--blue);
+    padding: 1.5rem 7%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .search-form
+{
+    background: var(--bg-color-2);
+    border-radius: .3em;
+    display: flex;
+    align-items: center;
+    height: 2.6rem;
+    width: 20rem;
+}
+.header .search-form input
+{
+    height: 100%;
+    font-size: 1.5rem;
+    color:black;
+    padding:1rem;
+}
+.header .search-form label{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    color: blue;
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color:black;
+}
+
+.form-container form{
+    background: var(--bg-color-1);
+
+    border-radius: .5rem;
+    padding:4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    align-items: center;
+}
+
+.form-container form .inputBox{
+    flex:1 1 15rem;
+}
+
+.form-container form .inputBox span{
+    font-size: 1.3rem;
+    color:var(--text-color-2);
+}
+
+.form-container form .inputBox input{
+    font-size: 1.4rem;
+    color:var(--text-color-1);
+    background:var(--bg-color-2);
+    border-radius: .5rem;
+    margin:.1rem 0;
+    text-transform: none;
+    width: 68%;
+    padding:1rem;
+}
+
+.form-container form .btn{
+    flex:1 1 23rem;
+    font-size: 1.7rem;
+    color: white;
+    background-color: var(--blue);
+
+}
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color:var(--blue);
+    font-size: 3.2rem;
+}
+/*.packages .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+
+}*/
+
+.dest{
+    display: inline-block;
+}
+
+.date{
+    display: inline-block;
+    float: right;
+}
+
+.favoriler{
+    text-decoration: none;
+    color:#007aff;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.favoriler:hover{
+    color:#000000;
+}
+
+.srcInpt:hover{
+    cursor: pointer;
+}
+
+.packages .box-container{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.packages .box-container .box{
+    background: white;
+    border-radius: .5rem;
+    margin-bottom: 20px;
+
+}
+
+
+.profil_name
+{
+    padding-top: 12px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+
+.packages .box-container .box .content{
+    padding:1.5rem;
+    padding-top: 8;
+}
+
+
+.packages .box-container .box .content p{
+    font-size: 1.1rem;
+    color:black;
+    line-height: 1.7;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.1rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background:var(--blue);
+    cursor: pointer;
+}
+
+html > body > div.container {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+html > body > div.container > div.modal {
+    position: relative;
+    display: block;
+    margin: 150px auto 0px auto;
+    width: 450px;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+html > body > div.container > div.modal > div.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+html > body > div.container > div.modal > div.close:hover {
+    cursor: pointer;
+}
+
+html > body > div.container > div.modal > div.title {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+html > body > div.container > div.modal > div.table {
+    display: block;
+    margin-top: 10px;
+}
+
+html > body > div.container > div.modal > div.table > div.row {
+    display: block;
+}
+
+html > body > div.container > div.modal > div.table > div.row > div.cell {
+    display: inline-block;
+    width: 150px;
+}
+
+html > body > div.container > div.modal > div.table > div.row > div.cell:first-child {
+    font-weight: bold;
+}
